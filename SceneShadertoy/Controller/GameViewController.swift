@@ -37,6 +37,8 @@ class GameViewController: UIViewController {
         
         // configure the view
         sceneView.backgroundColor = UIColor(hue: 0.22, saturation: 0.22, brightness: 0.22, alpha: 1.0)
+        sceneView.isPlaying = true
+        sceneView.loops = true
         
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
@@ -45,19 +47,16 @@ class GameViewController: UIViewController {
     
     @objc
     func handleTap(_ gestureRecognize: UIGestureRecognizer) {
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
-        
         // check what nodes are tapped
-        let p = gestureRecognize.location(in: scnView)
-        let hitResults = scnView.hitTest(p, options: [:])
+        let p = gestureRecognize.location(in: sceneView)
+        let hitResults = sceneView.hitTest(p, options: nil)
         // check that we clicked on at least one object
         if hitResults.count > 0 {
             // retrieved the first clicked object
-            let result = hitResults[0]
+            let result: AnyObject! = hitResults[0]
             
             // get its material
-            let material = result.node.geometry!.firstMaterial!
+            let material = result.node!.geometry!.firstMaterial!
             
             // highlight it
             SCNTransaction.begin()
