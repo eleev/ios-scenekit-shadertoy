@@ -12,7 +12,8 @@ import SceneKit
 class SphereNode: SCNNode, GeometryType {
     
     // MARK: - Properties
-    
+
+    var node: SCNNode = SCNNode()
     let defaultRadius: CGFloat = 3.0
     
     // MARK: - Initializers
@@ -37,7 +38,8 @@ class SphereNode: SCNNode, GeometryType {
         let sphere = SCNSphere(radius: radius)
         sphere.firstMaterial?.diffuse.contents = diffuseColor
         sphere.firstMaterial?.ambient.contents = ambientColor
-        self.geometry = sphere
+        
+        node = SCNNode(geometry: sphere)
     }
     
 }

@@ -9,27 +9,22 @@
 import Foundation
 import SceneKit
 
-class TextNode: SCNNode, GeometryType {
+class TextNode: GeometryType {
     
     // MARK: - Properties
     
+    var node: SCNNode = SCNNode()
     let defaultText = "Hello World!"
     
     
     // MARK: - Initializers
     
     init(text: String, diffuseColor: UIColor, ambientColor: UIColor) {
-        super.init()
         setup(from: text, diffuseColor: diffuseColor, ambientColor: ambientColor)
     }
     
-    override init() {
-        super.init()
+    init() {
         setup(from: defaultText, diffuseColor: defaultDiffuseColor, ambientColor: defaultAmbientColor)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("Required initialazer has not been implemented")
     }
     
     // MARK: - Private methods
@@ -41,7 +36,8 @@ class TextNode: SCNNode, GeometryType {
         
         textGeometry.firstMaterial?.diffuse.contents = diffuseColor
         textGeometry.firstMaterial?.ambient.contents = ambientColor
-        self.geometry = textGeometry
+    
+        node = SCNNode(geometry: textGeometry)
     }
     
 }

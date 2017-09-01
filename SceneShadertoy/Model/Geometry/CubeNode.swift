@@ -9,10 +9,12 @@
 import Foundation
 import SceneKit
 
-class CubeNode: SCNNode, GeometryType {
-
-    // MARK: - Properties
+class CubeNode: GeometryType {
     
+    // MARK: - Properties
+
+    var node: SCNNode = SCNNode()
+
     let defaultWidth: CGFloat = 5.0
     let defaultHeight: CGFloat = 5.0
     let defaultLenght: CGFloat = 5.0
@@ -21,17 +23,11 @@ class CubeNode: SCNNode, GeometryType {
     // MARK: - Initializers
     
     init(width: CGFloat, height: CGFloat, length: CGFloat, chamferRadius: CGFloat, diffureColor: UIColor, ambientColor: UIColor) {
-        super.init()
         setup(width: width, height: height, lenght: length, chamferRadius: chamferRadius, diffuseColor: defaultDiffuseColor, ambientColor: defaultAmbientColor)
     }
     
-    override init() {
-        super.init()
+    init() {
         setup(width: defaultWidth, height: defaultHeight, lenght: defaultLenght, chamferRadius: defaultChamferRadius, diffuseColor: defaultDiffuseColor, ambientColor: defaultAmbientColor)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("Required initializer has not been implemented")
     }
     
     // MARK: - Private methods
@@ -40,7 +36,8 @@ class CubeNode: SCNNode, GeometryType {
         let cube = SCNBox(width: width, height: height, length: lenght, chamferRadius: chamferRadius)
         cube.firstMaterial?.diffuse.contents = diffuseColor
         cube.firstMaterial?.ambient.contents = ambientColor
-        self.geometry = cube
+    
+        node = SCNNode(geometry: cube)
     }
     
 }
