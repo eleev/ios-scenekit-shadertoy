@@ -11,7 +11,7 @@ import UIKit
 import SceneKit
 
 protocol GeometryType {
-    // Empty declaration
+    var node: SCNNode { get set }
 }
 
 extension GeometryType {
@@ -21,5 +21,15 @@ extension GeometryType {
     
     var defaultAmbientColor: UIColor {
        return UIColor.white
+    }
+    
+    /// Applies a collection of shader modifiers to current SCNNode
+    ///
+    /// - Parameter shaderModifiers: is a dictionary which key is SCNShaderModifierEntryPoint and value is a String
+    func applyShader(shaderModifiers: [SCNShaderModifierEntryPoint : String]) {
+        node.geometry?.shaderModifiers = shaderModifiers
+        node.enumerateChildNodes { (node: SCNNode!, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
+            node.geometry?.shaderModifiers = shaderModifiers
+        }
     }
 }
