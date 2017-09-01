@@ -12,6 +12,6 @@ import Foundation
 class ShadersDataSource {
     var geometrySettings = Settings(items: [
         NoneSettingItem(),
-        ShaderSettingItem(shaderData: ShaderData(filename: "geometry_ripple"))
+        ShaderSettingItem(shaderData: ShaderData(filename: "GeometryRipple"))
         ])
 }
