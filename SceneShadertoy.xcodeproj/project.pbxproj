@@ -14,6 +14,11 @@
 		A97A20801F59910C00BAC103 /* ModelSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A207F1F59910C00BAC103 /* ModelSettingItem.swift */; };
 		A97A20821F59912D00BAC103 /* ShaderSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20811F59912D00BAC103 /* ShaderSettingItem.swift */; };
 		A97A20841F59914A00BAC103 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20831F59914A00BAC103 /* Settings.swift */; };
+		A97A20881F59981E00BAC103 /* TorusNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20871F59981E00BAC103 /* TorusNode.swift */; };
+		A97A208A1F5999D700BAC103 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20891F5999D700BAC103 /* TextNode.swift */; };
+		A97A208C1F599B7F00BAC103 /* CubeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A208B1F599B7F00BAC103 /* CubeNode.swift */; };
+		A97A208E1F599B9E00BAC103 /* GeometryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A208D1F599B9E00BAC103 /* GeometryType.swift */; };
+		A97A20901F59AA9400BAC103 /* SphereNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A208F1F59AA9400BAC103 /* SphereNode.swift */; };
 		A9931A801F5968470067FA89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9931A7F1F5968470067FA89 /* AppDelegate.swift */; };
 		A9931A821F5968470067FA89 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A9931A811F5968470067FA89 /* art.scnassets */; };
 		A9931A841F5968470067FA89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9931A831F5968470067FA89 /* GameViewController.swift */; };
@@ -50,6 +55,11 @@
 		A97A207F1F59910C00BAC103 /* ModelSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSettingItem.swift; sourceTree = "<group>"; };
 		A97A20811F59912D00BAC103 /* ShaderSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderSettingItem.swift; sourceTree = "<group>"; };
 		A97A20831F59914A00BAC103 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A97A20871F59981E00BAC103 /* TorusNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorusNode.swift; sourceTree = "<group>"; };
+		A97A20891F5999D700BAC103 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
+		A97A208B1F599B7F00BAC103 /* CubeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeNode.swift; sourceTree = "<group>"; };
+		A97A208D1F599B9E00BAC103 /* GeometryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryType.swift; sourceTree = "<group>"; };
+		A97A208F1F59AA9400BAC103 /* SphereNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereNode.swift; sourceTree = "<group>"; };
 		A9931A7C1F5968470067FA89 /* SceneShadertoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneShadertoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9931A7F1F5968470067FA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9931A811F5968470067FA89 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -95,9 +105,9 @@
 		A97A20751F59905900BAC103 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A97A20861F5997F300BAC103 /* Geometry */,
+				A97A20851F5997E700BAC103 /* Data */,
 				A97A207A1F5990CC00BAC103 /* Settings */,
-				A97A20761F59909200BAC103 /* ShaderData.swift */,
-				A97A20781F5990B000BAC103 /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +122,27 @@
 				A97A20831F59914A00BAC103 /* Settings.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		A97A20851F5997E700BAC103 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A97A20761F59909200BAC103 /* ShaderData.swift */,
+				A97A20781F5990B000BAC103 /* ModelData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A97A20861F5997F300BAC103 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				A97A208D1F599B9E00BAC103 /* GeometryType.swift */,
+				A97A20871F59981E00BAC103 /* TorusNode.swift */,
+				A97A20891F5999D700BAC103 /* TextNode.swift */,
+				A97A208B1F599B7F00BAC103 /* CubeNode.swift */,
+				A97A208F1F59AA9400BAC103 /* SphereNode.swift */,
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		A9931A731F5968470067FA89 = {
@@ -338,12 +369,17 @@
 			files = (
 				A9931A841F5968470067FA89 /* GameViewController.swift in Sources */,
 				A97A20791F5990B000BAC103 /* ModelData.swift in Sources */,
+				A97A20901F59AA9400BAC103 /* SphereNode.swift in Sources */,
 				A97A20771F59909200BAC103 /* ShaderData.swift in Sources */,
+				A97A208A1F5999D700BAC103 /* TextNode.swift in Sources */,
 				A97A207E1F5990F700BAC103 /* NoneSettingItem.swift in Sources */,
 				A97A207C1F5990D900BAC103 /* SettingItemType.swift in Sources */,
+				A97A20881F59981E00BAC103 /* TorusNode.swift in Sources */,
+				A97A208E1F599B9E00BAC103 /* GeometryType.swift in Sources */,
 				A97A20801F59910C00BAC103 /* ModelSettingItem.swift in Sources */,
 				A97A20841F59914A00BAC103 /* Settings.swift in Sources */,
 				A97A20821F59912D00BAC103 /* ShaderSettingItem.swift in Sources */,
+				A97A208C1F599B7F00BAC103 /* CubeNode.swift in Sources */,
 				A9931A801F5968470067FA89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
