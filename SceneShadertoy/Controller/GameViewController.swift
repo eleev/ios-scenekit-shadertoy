@@ -19,15 +19,16 @@ class GameViewController: UIViewController {
         
         // create a new scene
         let scene = SCNScene()
+        // set the scene to the view
+        sceneView.scene = scene
         
         // Configure lighting / camera nodes
         initLightsAndCamera(scene)
         
-        // set the scene to the view
-        sceneView.scene = scene
-        
         // Load Model into scene
 //        updateModel()
+        attachShader(scene)
+
         
         // allows the user to manipulate the camera
         sceneView.allowsCameraControl = true
@@ -127,5 +128,19 @@ extension GameViewController {
         scene.rootNode.addChildNode(ambientLightNode)
     }
     
+    func attachShader(_ scene: SCNScene) {
+        let shaderDataSource = ShadersDataSource()
+        
+        guard let geometryShaderSettings = shaderDataSource.geometrySettings.items.last as? ShaderSettingItem else {
+            return
+        }
+
+        var shaderModifiers = [SCNShaderModifierEntryPoint : String]()
+        shaderModifiers[SCNShaderModifierEntryPoint.geometry] = geometryShaderSettings.shaderProgram
+        
+        let sphere = SphereNode()
+        sphere.applyShader(shaderModifiers: shaderModifiers)
+        scene.rootNode.addChildNode(sphere.node)
+    }
     
 }
