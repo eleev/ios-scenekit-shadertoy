@@ -16,7 +16,7 @@ protocol GeometryType {
 
 extension GeometryType {
     var defaultDiffuseColor: UIColor {
-        return UIColor(hue: 0.8, saturation: 0.6, brightness: 1.0, alpha: 1.0)
+        return UIColor.cyan
     }
     
     var defaultAmbientColor: UIColor {
@@ -30,6 +30,7 @@ extension GeometryType {
         node.geometry?.shaderModifiers = shaderModifiers
         node.enumerateChildNodes { (node: SCNNode!, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
             node.geometry?.shaderModifiers = shaderModifiers
+            return
         }
     }
 }
