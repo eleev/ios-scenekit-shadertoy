@@ -9,28 +9,24 @@
 import Foundation
 import SceneKit
 
-class SphereNode: SCNNode, GeometryType {
+class SphereNode: GeometryType {
     
     // MARK: - Properties
 
     var node: SCNNode = SCNNode()
     let defaultRadius: CGFloat = 3.0
+    let defaultSegmentCount: Int = 1000
     
     // MARK: - Initializers
     
     init(radius: CGFloat, diffuseColor: UIColor, ambient: UIColor) {
-        super.init()
         setup(radius: radius, diffuseColor: defaultDiffuseColor, ambientColor: defaultAmbientColor)
     }
     
-    override init() {
-        super.init()
+    init() {
         setup(radius: defaultRadius, diffuseColor: defaultDiffuseColor, ambientColor: defaultAmbientColor)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("Required initializer has not been implemented")
-    }
     
     // MARK: - Private methods
     
@@ -38,6 +34,7 @@ class SphereNode: SCNNode, GeometryType {
         let sphere = SCNSphere(radius: radius)
         sphere.firstMaterial?.diffuse.contents = diffuseColor
         sphere.firstMaterial?.ambient.contents = ambientColor
+        sphere.segmentCount = defaultSegmentCount
         
         node = SCNNode(geometry: sphere)
     }
