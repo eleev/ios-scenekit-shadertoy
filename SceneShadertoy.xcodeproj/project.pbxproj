@@ -29,6 +29,8 @@
 		A9931A8C1F5968470067FA89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9931A8A1F5968470067FA89 /* LaunchScreen.storyboard */; };
 		A9931A971F5968470067FA89 /* SceneShadertoyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9931A961F5968470067FA89 /* SceneShadertoyTests.swift */; };
 		A9931AA21F5968470067FA89 /* SceneShadertoyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9931AA11F5968470067FA89 /* SceneShadertoyUITests.swift */; };
+		A9960A371F5AE3F7009EDD27 /* GeometryChemicalReaction.shader in Resources */ = {isa = PBXBuildFile; fileRef = A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */; };
+		A9960A391F5AE4A1009EDD27 /* GeometryBubble.shader in Resources */ = {isa = PBXBuildFile; fileRef = A9960A381F5AE4A1009EDD27 /* GeometryBubble.shader */; };
 		A9FF7E8F1F597B3D00B2281C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9FF7E8E1F597B3D00B2281C /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		A9931A9D1F5968470067FA89 /* SceneShadertoyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneShadertoyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9931AA11F5968470067FA89 /* SceneShadertoyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneShadertoyUITests.swift; sourceTree = "<group>"; };
 		A9931AA31F5968470067FA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeometryChemicalReaction.shader; sourceTree = "<group>"; };
+		A9960A381F5AE4A1009EDD27 /* GeometryBubble.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeometryBubble.shader; sourceTree = "<group>"; };
 		A9FF7E8E1F597B3D00B2281C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				A97A20921F59B00600BAC103 /* GeometryRipple.shader */,
+				A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */,
+				A9960A381F5AE4A1009EDD27 /* GeometryBubble.shader */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -354,10 +360,12 @@
 			files = (
 				A9FF7E8F1F597B3D00B2281C /* .gitignore in Resources */,
 				A9931A821F5968470067FA89 /* art.scnassets in Resources */,
+				A9960A391F5AE4A1009EDD27 /* GeometryBubble.shader in Resources */,
 				A97A20931F59B00600BAC103 /* GeometryRipple.shader in Resources */,
 				A9931A8C1F5968470067FA89 /* LaunchScreen.storyboard in Resources */,
 				A9931A891F5968470067FA89 /* Assets.xcassets in Resources */,
 				A9931A871F5968470067FA89 /* Main.storyboard in Resources */,
+				A9960A371F5AE3F7009EDD27 /* GeometryChemicalReaction.shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
