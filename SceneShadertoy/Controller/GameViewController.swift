@@ -44,6 +44,14 @@ class GameViewController: UIViewController {
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         sceneView.addGestureRecognizer(tapGesture)
+        
+        sceneTechnique(named: "drops_technique",setupCompletion: { technique in
+            technique?.setValue(NSValue(cgSize: self.view.frame.size.applying(CGAffineTransform(scaleX: 1.5, y: 1.5))), forKeyPath: "size_screen")
+        })
+        
+//        sceneTechnique(named: "sobel_technique") { (technique) in
+//            technique?.setValue(NSValue(cgSize: self.view.frame.size.applying(CGAffineTransform(scaleX: 0.5, y: 0.5))), forKeyPath: "size_screen")
+//        }
     }
     
     @objc
@@ -143,4 +151,19 @@ extension GameViewController {
         scene.rootNode.addChildNode(sphere.node)
     }
     
+    
+    /// Loads and applies a scene technique to the main scene view
+    ///
+    /// - Parameter technique: name of the destiantion scene technique
+    func sceneTechnique(named technique: String, setupCompletion: (_ techqnieus: SCNTechnique?)->Void) {
+        if let path = Bundle.main.path(forResource: technique, ofType: "plist") {
+            if let dict = NSDictionary(contentsOfFile: path) {
+                let forcedUnwrappedDict = dict as! [String : AnyObject]
+                let technique = SCNTechnique(dictionary:forcedUnwrappedDict)
+                setupCompletion(technique)
+                sceneView.technique = technique
+            }
+        }
+    }
 }
+
