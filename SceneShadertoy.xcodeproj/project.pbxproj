@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A975026C1F5EE259003D204D /* normal_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A975026B1F5EE248003D204D /* normal_map.jpg */; };
+		A975026D1F5EE27A003D204D /* drops.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502681F5ED9CF003D204D /* drops.fsh */; };
+		A975026E1F5EE27A003D204D /* drops.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502671F5ED9CF003D204D /* drops.vsh */; };
+		A975026F1F5EE27E003D204D /* drops_technique.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97502691F5ED9CF003D204D /* drops_technique.plist */; };
+		A97502771F5EE37F003D204D /* sobel_1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502731F5EE375003D204D /* sobel_1.fsh */; };
+		A97502781F5EE37F003D204D /* sobel_1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502741F5EE375003D204D /* sobel_1.vsh */; };
+		A97502791F5EE37F003D204D /* sobel_2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502751F5EE376003D204D /* sobel_2.fsh */; };
+		A975027A1F5EE37F003D204D /* sobel_2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502721F5EE375003D204D /* sobel_2.vsh */; };
+		A975027B1F5EE37F003D204D /* sobel_technique.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97502761F5EE376003D204D /* sobel_technique.plist */; };
+		A975027E1F5EE457003D204D /* spilled_1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A975027D1F5EE457003D204D /* spilled_1.fsh */; };
+		A97502801F5EE466003D204D /* spilled_2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A975027F1F5EE466003D204D /* spilled_2.fsh */; };
+		A97502821F5EE4BF003D204D /* spilled_1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502811F5EE4BF003D204D /* spilled_1.vsh */; };
+		A97502841F5EE4D6003D204D /* spilled_2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A97502831F5EE4D6003D204D /* spilled_2.vsh */; };
 		A97A20771F59909200BAC103 /* ShaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20761F59909200BAC103 /* ShaderData.swift */; };
 		A97A20791F5990B000BAC103 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A20781F5990B000BAC103 /* ModelData.swift */; };
 		A97A207C1F5990D900BAC103 /* SettingItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97A207B1F5990D900BAC103 /* SettingItemType.swift */; };
@@ -52,6 +65,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A97502671F5ED9CF003D204D /* drops.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = drops.vsh; sourceTree = "<group>"; };
+		A97502681F5ED9CF003D204D /* drops.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = drops.fsh; sourceTree = "<group>"; };
+		A97502691F5ED9CF003D204D /* drops_technique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drops_technique.plist; sourceTree = "<group>"; };
+		A975026B1F5EE248003D204D /* normal_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normal_map.jpg; sourceTree = "<group>"; };
+		A97502721F5EE375003D204D /* sobel_2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sobel_2.vsh; sourceTree = "<group>"; };
+		A97502731F5EE375003D204D /* sobel_1.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sobel_1.fsh; sourceTree = "<group>"; };
+		A97502741F5EE375003D204D /* sobel_1.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sobel_1.vsh; sourceTree = "<group>"; };
+		A97502751F5EE376003D204D /* sobel_2.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sobel_2.fsh; sourceTree = "<group>"; };
+		A97502761F5EE376003D204D /* sobel_technique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sobel_technique.plist; sourceTree = "<group>"; };
+		A975027D1F5EE457003D204D /* spilled_1.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spilled_1.fsh; sourceTree = "<group>"; };
+		A975027F1F5EE466003D204D /* spilled_2.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spilled_2.fsh; sourceTree = "<group>"; };
+		A97502811F5EE4BF003D204D /* spilled_1.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spilled_1.vsh; sourceTree = "<group>"; };
+		A97502831F5EE4D6003D204D /* spilled_2.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = spilled_2.vsh; sourceTree = "<group>"; };
 		A97A20761F59909200BAC103 /* ShaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderData.swift; sourceTree = "<group>"; };
 		A97A20781F5990B000BAC103 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A97A207B1F5990D900BAC103 /* SettingItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemType.swift; sourceTree = "<group>"; };
@@ -110,6 +136,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A97502661F5ED9A6003D204D /* Drops */ = {
+			isa = PBXGroup;
+			children = (
+				A97502691F5ED9CF003D204D /* drops_technique.plist */,
+				A97502671F5ED9CF003D204D /* drops.vsh */,
+				A97502681F5ED9CF003D204D /* drops.fsh */,
+				A975026B1F5EE248003D204D /* normal_map.jpg */,
+			);
+			path = Drops;
+			sourceTree = "<group>";
+		};
+		A975026A1F5ED9D6003D204D /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				A9960A381F5AE4A1009EDD27 /* GeometryBubble.shader */,
+				A97A20921F59B00600BAC103 /* GeometryRipple.shader */,
+				A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		A97502701F5EE34D003D204D /* Sobel */ = {
+			isa = PBXGroup;
+			children = (
+				A97502741F5EE375003D204D /* sobel_1.vsh */,
+				A97502731F5EE375003D204D /* sobel_1.fsh */,
+				A97502721F5EE375003D204D /* sobel_2.vsh */,
+				A97502751F5EE376003D204D /* sobel_2.fsh */,
+				A97502761F5EE376003D204D /* sobel_technique.plist */,
+			);
+			path = Sobel;
+			sourceTree = "<group>";
+		};
+		A97502711F5EE361003D204D /* Technique */ = {
+			isa = PBXGroup;
+			children = (
+				A975027C1F5EE437003D204D /* Spilled */,
+				A97502701F5EE34D003D204D /* Sobel */,
+				A97502661F5ED9A6003D204D /* Drops */,
+			);
+			path = Technique;
+			sourceTree = "<group>";
+		};
+		A975027C1F5EE437003D204D /* Spilled */ = {
+			isa = PBXGroup;
+			children = (
+				A97502811F5EE4BF003D204D /* spilled_1.vsh */,
+				A975027D1F5EE457003D204D /* spilled_1.fsh */,
+				A97502831F5EE4D6003D204D /* spilled_2.vsh */,
+				A975027F1F5EE466003D204D /* spilled_2.fsh */,
+			);
+			path = Spilled;
+			sourceTree = "<group>";
+		};
 		A97A20751F59905900BAC103 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,9 +237,8 @@
 		A97A20911F59AFD000BAC103 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				A97A20921F59B00600BAC103 /* GeometryRipple.shader */,
-				A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */,
-				A9960A381F5AE4A1009EDD27 /* GeometryBubble.shader */,
+				A97502711F5EE361003D204D /* Technique */,
+				A975026A1F5ED9D6003D204D /* Geometry */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -358,6 +437,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97502801F5EE466003D204D /* spilled_2.fsh in Resources */,
+				A97502821F5EE4BF003D204D /* spilled_1.vsh in Resources */,
+				A97502771F5EE37F003D204D /* sobel_1.fsh in Resources */,
+				A97502841F5EE4D6003D204D /* spilled_2.vsh in Resources */,
+				A97502781F5EE37F003D204D /* sobel_1.vsh in Resources */,
+				A97502791F5EE37F003D204D /* sobel_2.fsh in Resources */,
+				A975027A1F5EE37F003D204D /* sobel_2.vsh in Resources */,
+				A975027B1F5EE37F003D204D /* sobel_technique.plist in Resources */,
+				A975026F1F5EE27E003D204D /* drops_technique.plist in Resources */,
+				A975026D1F5EE27A003D204D /* drops.fsh in Resources */,
+				A975026E1F5EE27A003D204D /* drops.vsh in Resources */,
+				A975026C1F5EE259003D204D /* normal_map.jpg in Resources */,
+				A975027E1F5EE457003D204D /* spilled_1.fsh in Resources */,
 				A9FF7E8F1F597B3D00B2281C /* .gitignore in Resources */,
 				A9931A821F5968470067FA89 /* art.scnassets in Resources */,
 				A9960A391F5AE4A1009EDD27 /* GeometryBubble.shader in Resources */,
