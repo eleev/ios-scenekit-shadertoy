@@ -12,13 +12,17 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var sceneView: SCNView!
+    fileprivate var cube : SCNNode = SCNNode()
+    fileprivate var scene: SCNScene = SCNScene()
+    
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // create a new scene
-        let scene = SCNScene()
         // set the scene to the view
         sceneView.scene = scene
         
@@ -44,6 +48,8 @@ class GameViewController: UIViewController {
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         sceneView.addGestureRecognizer(tapGesture)
+        
+        setupSkybox()
         
         sceneTechnique(named: "drops_technique",setupCompletion: { technique in
             technique?.setValue(NSValue(cgSize: self.view.frame.size.applying(CGAffineTransform(scaleX: 1.5, y: 1.5))), forKeyPath: "size_screen")
@@ -164,6 +170,78 @@ extension GameViewController {
                 sceneView.technique = technique
             }
         }
+    }
+}
+
+
+
+// MARK: - Extnesion that adds support for Reversed Skybox
+extension GameViewController {
+    
+    func generateReversedBox(blender : Bool) -> SCNNode{
+        if (blender) {
+            let scene = SCNScene(named: "art.scnassets/cube.dae")!
+            let cube1 = scene.rootNode.childNode(withName: "Cube", recursively: true)!
+            return cube1
+        }
+        
+        let cube = SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.0)
+        let el = cube.element(at: 0)
+        
+        let chab = cube.sources(for: SCNGeometrySource.Semantic.vertex)
+        guard let vec = chab.first else {return SCNNode()}
+        
+        let chab2 = cube.sources(for: SCNGeometrySource.Semantic.texcoord)
+        guard let tex = chab2.first else {return SCNNode()}
+        
+        let norcoords : [SCNVector3] = [
+            SCNVector3(x: -0.0, y: -0.0, z: -1.0),
+            SCNVector3(x: -0.0, y: -0.0, z: -1.0),
+            SCNVector3(x: -0.0, y: -0.0, z: -1.0),
+            SCNVector3(x: -0.0, y: -0.0, z: -1.0),
+            SCNVector3(x: -1.0, y: -0.0, z: 0.0),
+            SCNVector3(x: -1.0, y: -0.0, z: 0.0),
+            SCNVector3(x: -1.0, y: -0.0, z: 0.0),
+            SCNVector3(x: -1.0, y: -0.0, z: 0.0),
+            SCNVector3(x: 0.0, y: -0.0, z: 1.0),
+            SCNVector3(x: 0.0, y: -0.0, z: 1.0),
+            SCNVector3(x: 0.0, y: -0.0, z: 1.0),
+            SCNVector3(x: 0.0, y: -0.0, z: 1.0),
+            SCNVector3(x: 1.0, y: -0.0, z: -0.0),
+            SCNVector3(x: 1.0, y: -0.0, z: -0.0),
+            SCNVector3(x: 1.0, y: -0.0, z: -0.0),
+            SCNVector3(x: 1.0, y: -0.0, z: -0.0),
+            SCNVector3(x: -0.0, y: -1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: -1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: -1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: -1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: 1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: 1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: 1.0, z: 0.0),
+            SCNVector3(x: -0.0, y: 1.0, z: 0.0)
+        ]
+//        let nor = SCNGeometrySource(data: Data(bytes: norcoords, length:12*24), semantic: SCNGeometrySourceSemanticNormal, vectorCount: 24, floatComponents: true, componentsPerVector: 3, bytesPerComponent: 4, dataOffset: 0, dataStride: 0)
+        
+        let nor = SCNGeometrySource(normals: norcoords)
+        
+        let geom = SCNGeometry(sources: [vec,nor,tex], elements: [el])
+        let cubeNode = SCNNode(geometry: geom)
+        return cubeNode
+    }
+    
+    func setupSkybox() {
+        cube = generateReversedBox(blender: true)
+        cube.position = SCNVector3Make(0.0, 0.0, 0.0)
+        cube.name = "Cube"
+        cube.categoryBitMask = 0b100 //3
+        cube.scale = SCNVector3(x: 40.0, y: 40.0, z: 40.0)
+        cube.eulerAngles.y = Float.pi * 2;
+        //Material
+        let mat = SCNMaterial()
+        mat.diffuse.contents = "art.scnassets/skymap.png"
+        cube.geometry?.materials = [mat]
+        cube.isHidden = true
+        scene.rootNode.addChildNode(cube)
     }
 }
 
