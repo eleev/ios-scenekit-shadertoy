@@ -49,7 +49,6 @@ class GameViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         sceneView.addGestureRecognizer(tapGesture)
         
-        setupSkybox()
         
         sceneTechnique(named: "drops_technique",setupCompletion: { technique in
             technique?.setValue(NSValue(cgSize: self.view.frame.size.applying(CGAffineTransform(scaleX: 1.5, y: 1.5))), forKeyPath: "size_screen")
@@ -180,7 +179,7 @@ extension GameViewController {
     
     func generateReversedBox(blender : Bool) -> SCNNode{
         if (blender) {
-            let scene = SCNScene(named: "art.scnassets/cube.dae")!
+            let scene = SCNScene(named: "art.scnassets/models/cube.dae")!
             let cube1 = scene.rootNode.childNode(withName: "Cube", recursively: true)!
             return cube1
         }
@@ -238,7 +237,7 @@ extension GameViewController {
         cube.eulerAngles.y = Float.pi * 2;
         //Material
         let mat = SCNMaterial()
-        mat.diffuse.contents = "art.scnassets/skymap.png"
+        mat.diffuse.contents = "art.scnassets/textures/skymap.png"
         cube.geometry?.materials = [mat]
         cube.isHidden = true
         scene.rootNode.addChildNode(cube)
