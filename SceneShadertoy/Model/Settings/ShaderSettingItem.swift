@@ -9,18 +9,25 @@
 import Foundation
 
 class ShaderSettingItem: SettingItemType {
+    
+    // MARK: - Properties
+    
     var shaderData: ShaderData
     var selected: Bool
+    
     var title: String {
         get {
             return shaderData.filename
         }
     }
+    
     var shaderProgram: String {
         get {
             return shaderData.shaderProgram
         }
     }
+    
+    // MARK: - Initializers
     
     init(shaderData: ShaderData, selected: Bool = false) {
         self.shaderData = shaderData

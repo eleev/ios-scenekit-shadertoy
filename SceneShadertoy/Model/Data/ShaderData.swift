@@ -9,8 +9,13 @@
 import Foundation
 
 class ShaderData: NSObject {
+    
+    // MARK: - Properties
+    
     var filename: String
-    var shaderProgram: String // Read only
+    var shaderProgram: String
+    
+    // MARK: - Initializers
     
     init(filename: String) {
         self.filename = filename

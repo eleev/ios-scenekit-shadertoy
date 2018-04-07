@@ -92,7 +92,7 @@
 		A97A208F1F59AA9400BAC103 /* SphereNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereNode.swift; sourceTree = "<group>"; };
 		A97A20921F59B00600BAC103 /* GeometryRipple.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeometryRipple.shader; sourceTree = "<group>"; };
 		A97A20941F59B09D00BAC103 /* ShadersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadersDataSource.swift; sourceTree = "<group>"; };
-		A9931A7C1F5968470067FA89 /* SceneShadertoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneShadertoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9931A7C1F5968470067FA89 /* scenekit-shadertoy-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scenekit-shadertoy-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9931A7F1F5968470067FA89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9931A811F5968470067FA89 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		A9931A831F5968470067FA89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -100,10 +100,10 @@
 		A9931A881F5968470067FA89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9931A8B1F5968470067FA89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9931A8D1F5968470067FA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9931A921F5968470067FA89 /* SceneShadertoyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneShadertoyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9931A921F5968470067FA89 /* scenekit-shadertoy-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scenekit-shadertoy-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9931A961F5968470067FA89 /* SceneShadertoyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneShadertoyTests.swift; sourceTree = "<group>"; };
 		A9931A981F5968470067FA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9931A9D1F5968470067FA89 /* SceneShadertoyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneShadertoyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9931A9D1F5968470067FA89 /* scenekit-shadertoy-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scenekit-shadertoy-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9931AA11F5968470067FA89 /* SceneShadertoyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneShadertoyUITests.swift; sourceTree = "<group>"; };
 		A9931AA31F5968470067FA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9960A361F5AE3F7009EDD27 /* GeometryChemicalReaction.shader */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeometryChemicalReaction.shader; sourceTree = "<group>"; };
@@ -257,9 +257,9 @@
 		A9931A7D1F5968470067FA89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9931A7C1F5968470067FA89 /* SceneShadertoy.app */,
-				A9931A921F5968470067FA89 /* SceneShadertoyTests.xctest */,
-				A9931A9D1F5968470067FA89 /* SceneShadertoyUITests.xctest */,
+				A9931A7C1F5968470067FA89 /* scenekit-shadertoy-ios-app.app */,
+				A9931A921F5968470067FA89 /* scenekit-shadertoy-ios-appTests.xctest */,
+				A9931A9D1F5968470067FA89 /* scenekit-shadertoy-ios-appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,9 +333,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9931A7B1F5968470067FA89 /* SceneShadertoy */ = {
+		A9931A7B1F5968470067FA89 /* scenekit-shadertoy-ios-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9931AA61F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoy" */;
+			buildConfigurationList = A9931AA61F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-app" */;
 			buildPhases = (
 				A9931A781F5968470067FA89 /* Sources */,
 				A9931A791F5968470067FA89 /* Frameworks */,
@@ -345,14 +345,14 @@
 			);
 			dependencies = (
 			);
-			name = SceneShadertoy;
+			name = "scenekit-shadertoy-ios-app";
 			productName = SceneShadertoy;
-			productReference = A9931A7C1F5968470067FA89 /* SceneShadertoy.app */;
+			productReference = A9931A7C1F5968470067FA89 /* scenekit-shadertoy-ios-app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9931A911F5968470067FA89 /* SceneShadertoyTests */ = {
+		A9931A911F5968470067FA89 /* scenekit-shadertoy-ios-appTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9931AA91F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoyTests" */;
+			buildConfigurationList = A9931AA91F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-appTests" */;
 			buildPhases = (
 				A9931A8E1F5968470067FA89 /* Sources */,
 				A9931A8F1F5968470067FA89 /* Frameworks */,
@@ -363,14 +363,14 @@
 			dependencies = (
 				A9931A941F5968470067FA89 /* PBXTargetDependency */,
 			);
-			name = SceneShadertoyTests;
+			name = "scenekit-shadertoy-ios-appTests";
 			productName = SceneShadertoyTests;
-			productReference = A9931A921F5968470067FA89 /* SceneShadertoyTests.xctest */;
+			productReference = A9931A921F5968470067FA89 /* scenekit-shadertoy-ios-appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9931A9C1F5968470067FA89 /* SceneShadertoyUITests */ = {
+		A9931A9C1F5968470067FA89 /* scenekit-shadertoy-ios-appUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9931AAC1F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoyUITests" */;
+			buildConfigurationList = A9931AAC1F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-appUITests" */;
 			buildPhases = (
 				A9931A991F5968470067FA89 /* Sources */,
 				A9931A9A1F5968470067FA89 /* Frameworks */,
@@ -381,9 +381,9 @@
 			dependencies = (
 				A9931A9F1F5968470067FA89 /* PBXTargetDependency */,
 			);
-			name = SceneShadertoyUITests;
+			name = "scenekit-shadertoy-ios-appUITests";
 			productName = SceneShadertoyUITests;
-			productReference = A9931A9D1F5968470067FA89 /* SceneShadertoyUITests.xctest */;
+			productReference = A9931A9D1F5968470067FA89 /* scenekit-shadertoy-ios-appUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -393,7 +393,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Astemir Eleev";
 				TargetAttributes = {
 					A9931A7B1F5968470067FA89 = {
@@ -412,7 +412,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9931A771F5968470067FA89 /* Build configuration list for PBXProject "SceneShadertoy" */;
+			buildConfigurationList = A9931A771F5968470067FA89 /* Build configuration list for PBXProject "scenekit-shadertoy-ios-app" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -425,9 +425,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9931A7B1F5968470067FA89 /* SceneShadertoy */,
-				A9931A911F5968470067FA89 /* SceneShadertoyTests */,
-				A9931A9C1F5968470067FA89 /* SceneShadertoyUITests */,
+				A9931A7B1F5968470067FA89 /* scenekit-shadertoy-ios-app */,
+				A9931A911F5968470067FA89 /* scenekit-shadertoy-ios-appTests */,
+				A9931A9C1F5968470067FA89 /* scenekit-shadertoy-ios-appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -521,12 +521,12 @@
 /* Begin PBXTargetDependency section */
 		A9931A941F5968470067FA89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9931A7B1F5968470067FA89 /* SceneShadertoy */;
+			target = A9931A7B1F5968470067FA89 /* scenekit-shadertoy-ios-app */;
 			targetProxy = A9931A931F5968470067FA89 /* PBXContainerItemProxy */;
 		};
 		A9931A9F1F5968470067FA89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9931A7B1F5968470067FA89 /* SceneShadertoy */;
+			target = A9931A7B1F5968470067FA89 /* scenekit-shadertoy-ios-app */;
 			targetProxy = A9931A9E1F5968470067FA89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -565,6 +565,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -572,6 +573,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -622,6 +624,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -629,6 +632,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -663,11 +667,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "$(SRCROOT)/SceneShadertoy/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoy;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io-scene-shadertoy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,11 +683,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "$(SRCROOT)/SceneShadertoy/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoy;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io-scene-shadertoy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -696,14 +700,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = SceneShadertoyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneShadertoy.app/SceneShadertoy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-shadertoy-ios-app.app/scenekit-shadertoy-ios-app";
 			};
 			name = Debug;
 		};
@@ -713,14 +717,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = SceneShadertoyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneShadertoy.app/SceneShadertoy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-shadertoy-ios-app.app/scenekit-shadertoy-ios-app";
 			};
 			name = Release;
 		};
@@ -729,7 +733,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = SceneShadertoyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoyUITests;
@@ -745,7 +749,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = SceneShadertoyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.SceneShadertoyUITests;
@@ -759,7 +763,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9931A771F5968470067FA89 /* Build configuration list for PBXProject "SceneShadertoy" */ = {
+		A9931A771F5968470067FA89 /* Build configuration list for PBXProject "scenekit-shadertoy-ios-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9931AA41F5968470067FA89 /* Debug */,
@@ -768,7 +772,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9931AA61F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoy" */ = {
+		A9931AA61F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9931AA71F5968470067FA89 /* Debug */,
@@ -777,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9931AA91F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoyTests" */ = {
+		A9931AA91F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-appTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9931AAA1F5968470067FA89 /* Debug */,
@@ -786,7 +790,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9931AAC1F5968470067FA89 /* Build configuration list for PBXNativeTarget "SceneShadertoyUITests" */ = {
+		A9931AAC1F5968470067FA89 /* Build configuration list for PBXNativeTarget "scenekit-shadertoy-ios-appUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9931AAD1F5968470067FA89 /* Debug */,

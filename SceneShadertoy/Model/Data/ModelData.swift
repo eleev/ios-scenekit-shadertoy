@@ -10,12 +10,18 @@ import Foundation
 import SceneKit
 
 class ModelData: NSObject {
+    
+    // MARK: - Properties
+    
     var filename: String
     var node: SCNNode
     
+    // MARK: - Initializers
+    
     init(filename: String, nodeName: String, nodeSetup: ((SCNNode) -> Void)? = nil) {
         self.filename = filename
-        node = SCNScene(named: "art.scnassets/\(filename).dae")?.rootNode.childNode(withName: nodeName, recursively: true) as SCNNode!
+        // TODO: porentially dangerous line of code. Consider refactoring, prbably changing to failable initializer
+        node = (SCNScene(named: "art.scnassets/\(filename).dae")?.rootNode.childNode(withName: nodeName, recursively: true) as SCNNode?)!
         nodeSetup?(node)
     }
     

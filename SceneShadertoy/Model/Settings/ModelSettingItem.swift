@@ -9,6 +9,9 @@
 import Foundation
 
 class ModelSettingItem: SettingItemType {
+    
+    // MARK: - Properties
+    
     var modelData: ModelData
     var selected: Bool
     
@@ -17,6 +20,8 @@ class ModelSettingItem: SettingItemType {
             return modelData.filename
         }
     }
+    
+    // MARK: - Initializers
     
     init(modelData: ModelData, selected: Bool = false) {
         self.modelData = modelData
