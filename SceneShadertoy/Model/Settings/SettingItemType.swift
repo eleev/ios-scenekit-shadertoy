@@ -9,6 +9,9 @@
 import Foundation
 
 protocol SettingItemType {
-    var title: String {get}
-    var selected: Bool {get set}
+    
+    // MARK: - Properties
+    
+    var title: String { get }
+    var selected: Bool { get set }
 }

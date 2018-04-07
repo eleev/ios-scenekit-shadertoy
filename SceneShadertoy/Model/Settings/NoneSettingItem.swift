@@ -9,6 +9,9 @@
 import Foundation
 
 class NoneSettingItem: SettingItemType {
+    
+    // MARK: - Properties
+    
     var title: String = "None"
     var selected: Bool = true
 }

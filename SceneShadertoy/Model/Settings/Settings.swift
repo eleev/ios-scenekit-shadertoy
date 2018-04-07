@@ -9,11 +9,18 @@
 import Foundation
 
 class Settings: NSObject {
+    
+    // MARK: - Properties
+    
     var items: [SettingItemType]
+    
+    // MARK: - Initializers
     
     init(items: [SettingItemType]) {
         self.items = items
     }
+    
+    // MARK: - Methods
     
     func selected() -> SettingItemType? {
         for item in items {
