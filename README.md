@@ -7,7 +7,9 @@
 [![Framework](https://img.shields.io/badge/framework-SceneKit-pink.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 02/September/2018.**
+**Last Update: 23/September/2018.**
+
+![](logo-shadertyoy.jpeg)
 
 # ✍️ About 
 Easily add, changed and combine `Vertex` and `Fragment` shaders for `SceneKit` objects. Implement multipass rendering techniques using `SceneKit` framework. Perfect tool for prototyping  shaders in the context of SceneKit framework. 🎮
