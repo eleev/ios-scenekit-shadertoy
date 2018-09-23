@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SceneShadertoy
+//@testable import scene
 
 class SceneShadertoyTests: XCTestCase {
     
