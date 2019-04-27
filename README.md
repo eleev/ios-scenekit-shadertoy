@@ -7,9 +7,11 @@
 [![Framework](https://img.shields.io/badge/framework-SceneKit-pink.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 23/September/2018.**
+**Last Update: 20/December/2018.**
 
 ![](logo-shadertyoy.jpeg)
+
+### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About 
 Easily add, changed and combine `Vertex` and `Fragment` shaders for `SceneKit` objects. Implement multipass rendering techniques using `SceneKit` framework. Perfect tool for prototyping  shaders in the context of SceneKit framework. 🎮
@@ -24,10 +26,12 @@ The app is constantly evolving by improving `UI`, adding new `shaders` and capab
 
 The following list is the minimal `ToDo` roadmap for the project:
 
+- [ ] Ability to switch between the built-in saders (thanks to [Create The Imaginable](https://github.com/CreateTheImaginable))
 - [ ] UI for Shader Editor
 - [ ] Shader Editor Sytax Highlighting 
 - [ ] UI for Shader Library 
 - [ ] More Examples with explanations 
+
 
 # 👨‍💻 Author 
 [Astemir Eleev](https://github.com/jVirus)
